@@ -84,7 +84,7 @@ public class VRBaseRaycaster : MonoBehaviour
 	{
 		if (isHit) {
 			// 衝突先が違うオブジェクトの場合
-			if (eventTrigger != null && !hit.Equals(prevHit))
+			if (eventTrigger != null && !hit.collider.gameObject.Equals(prevHit.collider.gameObject))
 			{
                 eventTrigger = null;
                 // 初期化

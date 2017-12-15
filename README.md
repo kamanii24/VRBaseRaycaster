@@ -1,6 +1,6 @@
 # VRBaseRaycaster v1.0.0
 VRでよく使う視点選択機能を使いやすくまとめたスクリプトです。
-
+![img000](https://i.imgur.com/cfqQ6iL.gif)<br>
 
 # 使い方
 #### 初期設定
@@ -31,3 +31,4 @@ VRBaseEventTriggerには4つのイベントハンドラが用意されていま�
 ## ビルド環境<br>
 Unity 2017.2.0p4<br>
 macOS High Sierra 10.13.2
+
