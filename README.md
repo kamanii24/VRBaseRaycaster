@@ -6,7 +6,8 @@ VRでよく使う視点選択機能を使いやすくまとめたスクリプト
 #### 初期設定
 VRBaseRaycaster/Prefabs/VRBaseRaycasterをシーンへ追加します。<br>
 追加したVRBaseRaycasterのInspector中の**PlayerHead**へ視線の起点となるオブジェクトを追加します。<br>
-**Target Layer**へRaycastの判定を取る対象のLayerを設定します。<br>
+**TargetLayer**へRaycastの判定を取る対象のLayerを設定します。<br>
+
 ![img001](https://i.imgur.com/MIwTdTj.png)<br>
 
 #### 注視対象の設定<br>
@@ -24,6 +25,7 @@ VRBaseEventTriggerには4つのイベントハンドラが用意されていま�
 - OnProcess<br>
 対象物を注視し続け、**VRBaseRaycast**の**Fixed Process Time**に設定された時間経過した場合に呼び出されます。<br>
 視点による選択を実行する場合に使用します。<br>
+
 ![img002](https://i.imgur.com/rNcXiKS.png)<br>
 
 ## ビルド環境<br>
