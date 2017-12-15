@@ -4,26 +4,28 @@ VRでよく使う視点選択機能を使いやすくまとめたスクリプト
 
 # 使い方
 #### 初期設定
-VABaseRaycaster/Prefabs/VRBaseRaycasterをシーンへ追加します。
-追加したVRBaseRaycasterのInspector中の**PlayerHead**へ視線の起点となるオブジェクトを追加します。
-**Target Layer**へRaycastの判定を取る対象のLayerを設定します。
+VRBaseRaycaster/Prefabs/VRBaseRaycasterをシーンへ追加します。<br>
+追加したVRBaseRaycasterのInspector中の**PlayerHead**へ視線の起点となるオブジェクトを追加します。<br>
+**Target Layer**へRaycastの判定を取る対象のLayerを設定します。<br>
+![img001](https://i.imgur.com/MIwTdTj.png)<br>
 
-#### 注視対象の設定
-注視対象にしたいオブジェクトにはColliderと、**VRBaseEventTrigger**コンポーネントを追加します。
-VRBaseEventTriggerには4つのイベントハンドラが用意されています。
-**- OnEnter**
-視点が対象物と衝突した時に呼び出されます。
+#### 注視対象の設定<br>
+注視対象にしたいオブジェクトにはColliderと、**VRBaseEventTrigger**コンポーネントを追加します。<br>
+VRBaseEventTriggerには4つのイベントハンドラが用意されています。<br>
+- OnEnter<br>
+視点が対象物と衝突した時に呼び出されます。<br>
 
-**- OnHover**
-視点が対象物と衝突しつつけている間呼び出されます。
+- OnHover<br>
+視点が対象物と衝突しつつけている間呼び出されます。<br>
 
-**- OnExit**
-視点が対象物から外れた時に呼び出されます。
+- OnExit<br>
+視点が対象物から外れた時に呼び出されます。<br>
 
-**- OnProcess**
-対象物を注視し続け、**VRBaseRaycast**の**Fixed Process Time**に設定された時間経過した場合に呼び出されます。
-視点による選択を実行する場合に使用します。
+- OnProcess<br>
+対象物を注視し続け、**VRBaseRaycast**の**Fixed Process Time**に設定された時間経過した場合に呼び出されます。<br>
+視点による選択を実行する場合に使用します。<br>
+![img002](https://i.imgur.com/rNcXiKS.png)<br>
 
-## ビルド環境
+## ビルド環境<br>
 Unity 2017.2.0p4<br>
 macOS High Sierra 10.13.2
